@@ -8,6 +8,7 @@ import { Entypo } from '@expo/vector-icons';
 import { EvilIcons } from '@expo/vector-icons';
 import HomePage from '../Screen/HomePage'
 import CartScreen from '../Screen/CartScreen'
+import ConfirmationScreen from '../Screen/ConfirmationScreen'
 
 const StackNavigator = () => {
     const Stack = createNativeStackNavigator();
@@ -61,6 +62,7 @@ const StackNavigator = () => {
             <Stack.Navigator>
                 <Stack.Screen name='Main' component={BottomTabs} options={{headerShown:false}} />
                 <Stack.Screen name="Cart" component={CartScreen} options={{headerShown:false}}/>
+                <Stack.Screen name="Confirm" component={ConfirmationScreen} options={{headerShown:false}}/>
             </Stack.Navigator>
         </NavigationContainer>
     );
